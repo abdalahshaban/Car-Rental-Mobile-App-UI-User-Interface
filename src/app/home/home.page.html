@@ -1,20 +1,41 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <div class="back-circle"></div>
+    <ion-title class="ion-text-center custom-font">Sign Up</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <svg class="back-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#8295A3"
+      d="M60.6,-49.5C69.5,-37.3,61.3,-12.6,54.9,11.4C48.6,35.4,44,58.7,30.3,66.7C16.7,74.7,-6.1,67.4,-22.7,56C-39.3,44.6,-49.6,29.2,-55.3,10.8C-61,-7.7,-62.1,-29,-52.1,-41.5C-42.1,-54,-21,-57.7,2.4,-59.6C25.9,-61.6,51.8,-61.8,60.6,-49.5Z"
+      transform="translate(100 100)" />
+  </svg>
+  <div class="ion-padding">
+    <form action="" class="ion-padding">
+      <div class="wrap-input">
+        <input class="input" type="text" name="user.name" placeholder="Full Name">
+      </div>
+      <div class="wrap-input">
+        <input class="input" type="text" name="user.email" placeholder="Email">
+      </div>
+      <div class="wrap-input">
+        <input class="input" type="password" name="user.password" placeholder="Password">
+      </div>
+
+      <div class="container-form-btn">
+        <button class="form-btn custom-font"> Submit</button>
+      </div>
+
+
+    </form>
   </div>
+
 </ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-title class="ion-text-center custom-font">Already have an account? <a href="">Sign In</a></ion-title>
+  </ion-toolbar>
+</ion-footer>
